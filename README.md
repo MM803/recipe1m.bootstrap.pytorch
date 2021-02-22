@@ -107,14 +107,6 @@ Please, create an account on http://im2recipe.csail.mit.edu/ and agree to the te
 ```
 mkdir data/recip1m
 cd data/recip1m
-wget http://data.lip6.fr/cadene/recipe1m/bigrams1M.pkl
-wget http://data.lip6.fr/cadene/recipe1m/classes1M.pkl
-wget http://data.lip6.fr/cadene/recipe1m/data_lmdb.tar
-wget http://data.lip6.fr/cadene/recipe1m/food101_classes_renamed.txt
-wget http://data.lip6.fr/cadene/recipe1m/recipe1M.tar.gz
-wget http://data.lip6.fr/cadene/recipe1m/remove1M.txt
-wget http://data.lip6.fr/cadene/recipe1m/text.tar.gz
-wget http://data.lip6.fr/cadene/recipe1m/titles1M.txt
 tar -xvf data_lmdb.tar
 rm data_lmdb.tar
 tar -xzvf recipe1M.tar.gz
@@ -122,7 +114,6 @@ rm recipe1M.tar.gz
 tar -xzvf text.tar.gz
 rm text.tar.gz
 cd text
-wget http://data.lip6.fr/cadene/recipe1m/text/vocab.pkl
 ```
 
 Note: Features extracted from resnet50 are included in data_lmdb.
